@@ -1,0 +1,33 @@
+1) Creare una classe Automobile con i seguenti attributi:
+
+- modello
+- marchio
+- targa
+- cilindrata
+- prezzo
+- nMarce
+- marciaInserita, il cui valore di default è 0.
+- isAccesa, il cui valore di default è false.
+
+Definire un costruttore e un getter e setter per ogni attributo. Definire inoltre
+i seguenti metodi:
+
+- accensione() -> se isAccesa è false, questo metodo lo setta a true e setta marciaInserita a 1.
+- spegnimento() -> se isAccesa è true, questo metodo lo setta a false e setta la marciaInserita a 0.
+- aumentaMarcia() -> aumenta la marcia di 1 se non supera nMarce.
+- scalaMarcia() -> diminuisce la marcia di 1 a meno che non sia in prima.
+- inserisciMarcia(int newMarcia) -> cambia la marcia in newMarcia
+
+2) Definire una classe Concessionaria con i seguenti attributi:
+
+- nome
+- indirizzo
+- le auto in vetrina, che possono essere al massimo 100.
+
+Definire due costruttori, uno con le auto in vetrina passate in input, e uno senza e che inizializzi le auto in vendita
+con un array vuoto. Inoltre scrivere un getter e setter per ogni attributo. Definire inoltre
+i seguenti metodi:
+
+- aggiungiAuto(auto) -> aggiunge l'auto tra quelle in vetrina.
+- stampaPerPrezzo(prezzo) -> stampa tutte le auto con un prezzo inferiore a quello passato in input
+- stampaPerMarchio(marchio) -> stampa tutte le auto di quel marchio
